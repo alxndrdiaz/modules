@@ -7,7 +7,7 @@ process BRACKEN_BUILD {
         'biocontainers/bracken:2.9--py39h1f90b4d_0' }"
     
     input:
-    ttuple val(meta), path(db)
+    tuple val(meta), path(db)
 
     output:
     tuple val(meta), path("$prefix"), emit: db
